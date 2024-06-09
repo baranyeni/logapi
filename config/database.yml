@@ -16,4 +16,4 @@ production:
   database: GENERAL_DB
   username: admin
   password: <%= ENV['LOG_API_DATABASE_PASSWORD'] %>
-  host: 160.153.128.6
+  host: <%= ENV['LOG_API_DATABASE_HOST'] %>

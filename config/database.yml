@@ -19,7 +19,7 @@ default: &default
 
 development:
   <<: *default
-  database: log_api_development
+  database: GENERAL_DB
 
 # Warning: The database defined as "test" will be erased and
 # re-generated from your development database when you run "rake".
@@ -50,6 +50,6 @@ test:
 #
 production:
   <<: *default
-  database: log_api_production
-  username: log_api
+  database: GENERAL_DB
+  username: admin
   password: <%= ENV['LOG_API_DATABASE_PASSWORD'] %>
